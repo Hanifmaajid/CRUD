@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_data"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REVISI DATA GUDANG"
+        android:id="@+id/jdl2"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        ></TextView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_id_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_below="@id/jdl2"
+        android:text="ID BARANG : "
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/tv_nama_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="NAMA BARANG : "
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/et_id"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_harga_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="HARGA BARANG: "
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/et_nama"
+        android:padding="3dp"/>
+
+    <TextView
+        android:id="@+id/tv_stock_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="STOCK BARANG: "
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/et_harga"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/et_id"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_below="@id/tv_id_item"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_light"
+        android:hint="ID barang"
+        android:textColorHint="@android:color/holo_red_light"
+        android:padding="5dp"/>
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_below="@id/tv_nama_item"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:hint="masukkan nama barang"
+        android:textColorHint="@color/black"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/et_harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_below="@id/tv_harga_item"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:hint="masukkan harga barang"
+        android:textColorHint="@color/black"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/et_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_below="@id/tv_stock_item"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:hint="masukkan stock barang"
+        android:textColorHint="@color/black"
+        android:padding="5dp"/>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="EDIT"
+        android:layout_below="@id/et_stock"
+        android:background="#8B0000"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
